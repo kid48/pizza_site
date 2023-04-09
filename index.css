@@ -4,6 +4,9 @@
 TODO: Оптимизировать код
  Помни: DRY (Don't Repeat Yourself)
 */
+/*
+TODO: по фасту сделать media query
+*/
 :root {
     --main-color: #FDEEDC;
     --second-color: #FFD8A9;
