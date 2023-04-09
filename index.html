@@ -226,54 +226,7 @@
             <button>Заказать</button>
         </div>
     </div>
-    <div class="pizza-item">
-        <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/d7bbbc4c74af442e8b9b3ea2faf3c941_366x366.webp"
-             alt="">
-        <p class="description">
-            Пастрами из говядины, сладкий перец, томаты, красный лук, чеснок, соус ткемали, моцарелла, фирменный
-            томатный соус
-        </p>
-        <div class="order">
-            <span class="price">388 Kč</span>
-            <button>Заказать</button>
-        </div>
-    </div>
-    <div class="pizza-item">
-        <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/d7bbbc4c74af442e8b9b3ea2faf3c941_366x366.webp"
-             alt="">
-        <p class="description">
-            Пастрами из говядины, сладкий перец, томаты, красный лук, чеснок, соус ткемали, моцарелла, фирменный
-            томатный соус
-        </p>
-        <div class="order">
-            <span class="price">388 Kč</span>
-            <button>Заказать</button>
-        </div>
-    </div>
-    <div class="pizza-item">
-        <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/d7bbbc4c74af442e8b9b3ea2faf3c941_366x366.webp"
-             alt="">
-        <p class="description">
-            Пастрами из говядины, сладкий перец, томаты, красный лук, чеснок, соус ткемали, моцарелла, фирменный
-            томатный соус
-        </p>
-        <div class="order">
-            <span class="price">388 Kč</span>
-            <button>Заказать</button>
-        </div>
-    </div>
-    <div class="pizza-item">
-        <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/d7bbbc4c74af442e8b9b3ea2faf3c941_366x366.webp"
-             alt="">
-        <p class="description">
-            Пастрами из говядины, сладкий перец, томаты, красный лук, чеснок, соус ткемали, моцарелла, фирменный
-            томатный соус
-        </p>
-        <div class="order">
-            <span class="price">388 Kč</span>
-            <button>Заказать</button>
-        </div>
-    </div>
+
 </main>
 <footer>
     <div class="footer-contact">
@@ -281,6 +234,12 @@
         <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</p>
         <p><i class="fas fa-phone"></i> (555) 555-5555</p>
         <p><i class="fas fa-envelope"></i> info@pizzeria.com</p>
+
+    </div>
+    <div class="open_hours">
+        <p>Monday, Tuesday, Wednesday, Thursday: 10:00 - 20:00</p>
+        <p>Friday, Saturday, Sunday: 12:00 - 20:00</p>
+
     </div>
     <div class="footer-social">
         <h3>Follow Us</h3>
@@ -295,9 +254,32 @@
         <p>Website by <a href="#">Your Name Here</a></p>
     </div>
 </footer>
-<!-- TODO: сделать JSON-LD-->
-<script type="application/ld+json">
 
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Restaurant",
+        "name": "Pizza Time!",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Anytown",
+            "addressRegion": "USA"
+        },
+        "telephone": "(555) 555-5555",
+        "email": "info@pizzatime.com",
+        "openingHours": [
+            "Mo-Tu-We-Th 10:00-20:00",
+            "Fr-Sa-Su 12:00-20:00"
+        ],
+        "url": "https://www.pizzatime.com",
+        "sameAs": [
+            "https://www.facebook.com/pizzatime",
+            "https://www.twitter.com/pizzatime",
+            "https://www.instagram.com/pizzatime"
+        ],
+        "logo": "https://www.pizzatime.com/assets/pizza-slise.png"
+    }
 </script>
 </body>
 </html>
