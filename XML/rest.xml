@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurant>
+    <name>Pizza Time!</name>
+    <address>
+        <street>123 Main St</street>
+        <city>New York</city>
+        <state>NY</state>
+        <zipcode>10001</zipcode>
+    </address>
+    <phone>(555) 555-5555</phone>
+    <email>info@pizzatime.com</email>
+    <website>https://www.pizzatime.com</website>
+    <hours>
+        <day>Monday</day>
+        <open>11:00am</open>
+        <close>9:00pm</close>
+    </hours>
+    <hours>
+        <day>Tuesday</day>
+        <open>10:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <hours>
+        <day>Wednesday</day>
+        <open>10:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <hours>
+        <day>Thursday</day>
+        <open>10:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <hours>
+        <day>Friday</day>
+        <open>12:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <hours>
+        <day>Saturday</day>
+        <open>12:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <hours>
+        <day>Sunday</day>
+        <open>12:00am</open>
+        <close>8:00pm</close>
+    </hours>
+    <menu>
+        <category name="Appetizers">
+            <item>
+                <name>Garlic Bread</name>
+                <description>Warm, crispy bread with garlic and butter</description>
+                <price>$4.99</price>
+            </item>
+            <item>
+                <name>Caprese Salad</name>
+                <description>Tomatoes, fresh mozzarella, and basil</description>
+                <price>$8.99</price>
+            </item>
+        </category>
+        <category name="Pasta">
+            <item>
+                <name>Spaghetti Bolognese</name>
+                <description>Classic spaghetti with meat sauce</description>
+                <price>$12.99</price>
+            </item>
+            <item>
+                <name>Fettuccine Alfredo</name>
+                <description>Creamy Alfredo sauce with fettuccine pasta</description>
+                <price>$14.99</price>
+            </item>
+        </category>
+        <category name="Pizza">
+            <item>
+                <name>Margherita Pizza</name>
+                <description>Tomato sauce, fresh mozzarella, and basil</description>
+                <price>$16.99</price>
+            </item>
+            <item>
+                <name>Pepperoni Pizza</name>
+                <description>Tomato sauce, mozzarella cheese, and pepperoni</description>
+                <price>$18.99</price>
+            </item>
+        </category>
+    </menu>
+    <news>
+        <item>
+            <title>New Pizza of the Month</title>
+            <description>Try our delicious new pizza of the month, featuring fresh ingredients and bold flavors</description>
+            <date>2023-04-01</date>
+        </item>
+    </news>
+</restaurant>
