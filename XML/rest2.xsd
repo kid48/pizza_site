@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Define elements -->
+    <xs:element name="restaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="address" type="addressType"/>
+                <xs:element name="phone" type="phoneType"/>
+                <xs:element name="email" type="xs:string"/>
+                <xs:element name="website" type="xs:anyURI"/>
+                <xs:element name="hours" type="hoursType" maxOccurs="unbounded"/>
+                <xs:element name="menu" type="menuType"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="rating" type="xs:decimal" use="optional"/>
+            <xs:attribute name="cuisine" type="xs:string" use="optional"/>
+            <xs:attribute name="location" type="xs:string" use="optional"/>
+            <xs:attribute name="delivery" type="xs:boolean" use="optional"/>
+            <xs:attribute name="takeout" type="xs:boolean" use="optional"/>
+            <xs:attribute name="dinein" type="xs:boolean" use="optional"/>
+            <xs:attribute name="reservations" type="xs:boolean" use="optional"/>
+            <xs:attribute name="parking" type="xs:boolean" use="optional"/>
+            <xs:attribute name="wifi" type="xs:boolean" use="optional"/>
+            <xs:attribute name="kidsmenu" type="xs:boolean" use="optional"/>
+            <xs:attribute name="halal" type="xs:boolean" use="optional"/>
+            <xs:attribute name="vegan" type="xs:boolean" use="optional"/>
+            <xs:attribute name="glutenfree" type="xs:boolean" use="optional"/>
+            <xs:attribute name="kosher" type="xs:boolean" use="optional"/>
+            <xs:attribute name="outdoorseating" type="xs:boolean" use="optional"/>
+            <xs:attribute name="bar" type="xs:boolean" use="optional"/>
+            <xs:attribute name="happyhour" type="xs:boolean" use="optional"/>
+            <xs:attribute name="liveentertainment" type="xs:boolean" use="optional"/>
+            <xs:attribute name="goodforgroups" type="xs:boolean" use="optional"/>
+            <xs:attribute name="wheelchairaccessible" type="xs:boolean" use="optional"/>
+            <xs:attribute name="alcohol" type="xs:string" use="optional"/>
+            <xs:attribute name="price" type="xs:string" use="optional"/>
+            <xs:attribute name="attire" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="state" type="xs:string"/>
+            <xs:element name="zipcode" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="phoneType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\(\d{3}\)\d{3}-\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="hoursType">
+        <xs:sequence>
+            <xs:element name="day" type="dayType"/>
+            <xs:element name="open" type="timeType"/>
+            <xs:element name="close" type="timeType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="dayType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Monday"/>
+            <xs:enumeration value="Tuesday"/>
+            <xs:enumeration value="Wednesday"/>
+            <xs:enumeration value="Thursday"/>
+            <xs:enumeration value="Friday"/>
+            <xs:enumeration value="Saturday"/>
+            <xs:enumeration value="Sunday"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="timeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,2}:[0-9]{2}\s(AM|PM)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="menuType">
+        <xs:sequence>
+            <xs:element name="appetizers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="entrees" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="desserts" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="drinks" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
