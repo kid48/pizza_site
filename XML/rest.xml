@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<restaurant>
+<restaurant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="schema.xsd">
     <name>Pizza Time!</name>
     <address>
         <street>123 Main St</street>
@@ -58,36 +59,35 @@
                 <price>$8.99</price>
             </item>
         </category>
-        <category name="Pasta">
-            <item>
-                <name>Spaghetti Bolognese</name>
-                <description>Classic spaghetti with meat sauce</description>
-                <price>$12.99</price>
-            </item>
-            <item>
-                <name>Fettuccine Alfredo</name>
-                <description>Creamy Alfredo sauce with fettuccine pasta</description>
-                <price>$14.99</price>
-            </item>
-        </category>
+
         <category name="Pizza">
             <item>
-                <name>Margherita Pizza</name>
-                <description>Tomato sauce, fresh mozzarella, and basil</description>
-                <price>$16.99</price>
+                <name>Pizza from halves</name>
+                <description>Assemble your 35 cm pizza with two different flavors</description>
+                <price>210 Kč</price>
             </item>
             <item>
-                <name>Pepperoni Pizza</name>
-                <description>Tomato sauce, mozzarella cheese, and pepperoni</description>
-                <price>$18.99</price>
+                <name>Pizza from the chef</name>
+                <description>Beef pastrami , sweet pepper , tomatoes , red onion , garlic , tkemali sauce , mozzarella
+                    cheese , signature tomato sauce
+                </description>
+                <price>388 Kč</price>
             </item>
+
+            <item>
+                <name>Cheesy</name>
+                <description>Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce
+                </description>
+                <price>388 Kč</price>
+            </item>
+            <item>
+                <name>Cheesy</name>
+                <description>Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce
+                </description>
+                <price>388 Kč</price>
+            </item>
+
         </category>
     </menu>
-    <news>
-        <item>
-            <title>New Pizza of the Month</title>
-            <description>Try our delicious new pizza of the month, featuring fresh ingredients and bold flavors</description>
-            <date>2023-04-01</date>
-        </item>
-    </news>
+
 </restaurant>
