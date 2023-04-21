@@ -90,11 +90,19 @@
     <xs:complexType name="menuType">
         <xs:sequence>
             <xs:element name="appetizers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="entrees" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="desserts" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="pizza" type="item" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="dessert" type="item" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="drinks" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+
+
+        <xs:complexType name="item">
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="description" type="xs:string" use="required"/>
+            <xs:attribute name="price" type="xs:decimal" use="required"/>
+        </xs:complexType>
+
 
 
 </xs:schema>

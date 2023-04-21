@@ -1,0 +1,21 @@
+{
+  "restaurant": {
+    "id": "152",
+    "cuisine": "italy",
+    "glutenfree": "true",
+    "goodforgroups": "true",
+    "happyhour": "true",
+    "kidsmenu": "false",
+    "parking": "false",
+    "wifi": "true",
+    "outdoorseating": "true",
+    "takeout": "true",
+    "name": "Pizza Time!",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10001"
+    },
+    "phone": "(555)555-5555",
+    "email": "

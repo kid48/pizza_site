@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <restaurant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="rest2.xsd" id="152">
+            xsi:noNamespaceSchemaLocation="rest2.xsd" id="152" cuisine="italy" glutenfree="true" goodforgroups="true"
+            happyhour="true" kidsmenu="false" parking="false" wifi="true" outdoorseating="true" takeout="true">
     <name>Pizza Time!</name>
     <address>
         <street>123 Main St</street>
@@ -47,8 +48,46 @@
         <close>8:00 PM</close>
     </hours>
     <menu>
+        <pizza name="Pizza from halves" description="Assemble your 35 cm pizza with two different flavors" price="210"/>
+        <pizza name="Pizza from the chef"
+               description="Beef pastrami , sweet pepper , tomatoes , red onion , garlic , tkemali sauce , mozzarella cheese , signature tomato sauce"
+               price="388"/>
+        <pizza name="Cheesy" description="Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce"
+               price="388"/>
+        <pizza name="Fresh pepperoni"
+               description="Savory pepperoni , extra mozzarella , tomatoes , signature tomato sauce" price="388"/>
+        <pizza name="Double chicken" description="Chicken , mozzarella cheese , alfredo signature sauce" price="388"/>
+        <pizza name="Chorizo fresh"
+               description="Signature tomato sauce , mozzarella cheese , spicy chorizo , sweet pepper" price="388"/>
+        <pizza name="Ham and cheese"
+               description="Ham , mozzarella cheese , alfredo signature sauce" price="388"/>
+        <pizza name="Cheese chicken"
+               description="Chicken , mozzarella cheese , cheddar and parmesan cheese , cheese sauce , tomatoes , alfredo signature sauce , garlic"
+               price="388"/>
 
+        <pizza name="BBQ Chicken"
+               description="Chicken , bacon , barbecue sauce , red onion , mozzarella cheese , signature tomato sauce"
+               price="388"/>
 
+        <pizza name="Four cheeses"
+               description="Blue cheese , cheddar and parmesan cheese mix , mozzarella cheese , alfredo signature sauce"
+               price="388"/>
+
+        <dessert name="Cheesecake New York"
+                 description="We tried a thousand desserts and finally found the favorite of the guests - the most delicate curd cheesecake"
+                 price="210"/>
+
+        <dessert name="Banana cheesecake with chocolate chip cookies"
+                 description="Sunny outside and bright inside. Summer novelty - delicate cheesecake with banana and chocolate chip cookies"
+                 price="210"/>
+
+        <dessert name="Fondant"
+                 description="Four out of five guests say “Oh la la!” when they eat this French dessert with a crispy crust and melted chocolate filling."
+                 price="210"/>
+
+        <dessert name="Puff sticks with pineapples and cranberries"
+                 description="Everything here at once - lingonberries and pineapple with condensed milk on puff pastry"
+                 price="210"/>
 
     </menu>
 
