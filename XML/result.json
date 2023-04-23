@@ -1,5 +1,53 @@
 {
   "restaurant": {
+    "name": "Pizza Time!",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10001"
+    },
+    "phone": "(555)555-5555",
+    "email": "info@pizzatime.com",
+    "website": "https://www.pizzatime.com",
+    "hours": [
+      {
+        "day": "Monday",
+        "open": "11:00 AM",
+        "close": "9:00 PM"
+      },
+      {
+        "day": "Tuesday",
+        "open": "10:00 AM",
+        "close": "8:00 PM"
+      },
+      {
+        "day": "Wednesday",
+        "open": "10:00 AM",
+        "close": "8:00 PM"
+      },
+      {
+        "day": "Thursday",
+        "open": "10:00 AM",
+        "close": "8:00 PM"
+      },
+      {
+        "day": "Friday",
+        "open": "12:00 AM",
+        "close": "8:00 PM"
+      },
+      {
+        "day": "Saturday",
+        "open": "12:00 AM",
+        "close": "8:00 PM"
+      },
+      {
+        "day": "Sunday",
+        "open": "12:00 AM",
+        "close": "8:00 PM"
+      }
+    ],
+    "xsi:noNamespaceSchemaLocation": "rest2.xsd",
     "id": "152",
     "cuisine": "italy",
     "glutenfree": "true",
@@ -10,12 +58,95 @@
     "wifi": "true",
     "outdoorseating": "true",
     "takeout": "true",
-    "name": "Pizza Time!",
-    "address": {
-      "street": "123 Main St",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10001"
-    },
-    "phone": "(555)555-5555",
-    "email": "
+    "menu": {
+      "pizzas": [
+        {
+          "id": "0",
+          "name": "Pizza from halves",
+          "description": "Assemble your 35 cm pizza with two different flavors",
+          "price": "210"
+        },
+        {
+          "id": "1",
+          "name": "Pizza from the chef",
+          "description": "Beef pastrami , sweet pepper , tomatoes , red onion , garlic , tkemali sauce , mozzarella cheese , signature tomato sauce",
+          "price": "388"
+        },
+        {
+          "id": "2",
+          "name": "Cheesy",
+          "description": "Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce",
+          "price": "388"
+        },
+        {
+          "id": "3",
+          "name": "Fresh pepperoni",
+          "description": "Savory pepperoni , extra mozzarella , tomatoes , signature tomato sauce",
+          "price": "388"
+        },
+        {
+          "id": "4",
+          "name": "Double chicken",
+          "description": "Chicken , mozzarella cheese , alfredo signature sauce",
+          "price": "388"
+        },
+        {
+          "id": "5",
+          "name": "Chorizo fresh",
+          "description": "Signature tomato sauce , mozzarella cheese , spicy chorizo , sweet pepper",
+          "price": "388"
+        },
+        {
+          "id": "6",
+          "name": "Ham and cheese",
+          "description": "Ham , mozzarella cheese , alfredo signature sauce",
+          "price": "388"
+        },
+        {
+          "id": "7",
+          "name": "Cheese chicken",
+          "description": "Chicken , mozzarella cheese , cheddar and parmesan cheese , cheese sauce , tomatoes , alfredo signature sauce , garlic",
+          "price": "388"
+        },
+        {
+          "id": "8",
+          "name": "BBQ Chicken",
+          "description": "Chicken , bacon , barbecue sauce , red onion , mozzarella cheese , signature tomato sauce",
+          "price": "388"
+        },
+        {
+          "id": "9",
+          "name": "Four cheeses",
+          "description": "Blue cheese , cheddar and parmesan cheese mix , mozzarella cheese , alfredo signature sauce",
+          "price": "388"
+        }
+      ],
+      "desserts": [
+        {
+          "id": "10",
+          "name": "Cheesecake New York",
+          "description": "We tried a thousand desserts and finally found the favorite of the guests - the most delicate curd cheesecake",
+          "price": "220"
+        },
+        {
+          "id": "11",
+          "name": "Banana cheesecake with chocolate chip cookies",
+          "description": "Sunny outside and bright inside. Summer novelty - delicate cheesecake with banana and chocolate chip cookies",
+          "price": "396"
+        },
+        {
+          "id": "12",
+          "name": "Fondant",
+          "description": "Four out of five guests say “Oh la la!” when they eat this French dessert with a crispy crust and melted chocolate filling.",
+          "price": "120"
+        },
+        {
+          "id": "13",
+          "name": "Puff sticks with pineapples and cranberries",
+          "description": "Everything here at once - lingonberries and pineapple with condensed milk on puff pastry",
+          "price": "440"
+        }
+      ]
+    }
+  }
+}

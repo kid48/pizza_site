@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <restaurant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="rest2.xsd" id="152" cuisine="italy" glutenfree="true" goodforgroups="true"
+            xsi:noNamespaceSchemaLocation="rest_schema.xsd" id="152" cuisine="italy" glutenfree="true" goodforgroups="true"
             happyhour="true" kidsmenu="false" parking="false" wifi="true" outdoorseating="true" takeout="true">
     <name>Pizza Time!</name>
     <address>
@@ -48,46 +48,46 @@
         <close>8:00 PM</close>
     </hours>
     <menu>
-        <pizza name="Pizza from halves" description="Assemble your 35 cm pizza with two different flavors" price="210"/>
-        <pizza name="Pizza from the chef"
+        <pizza id="0" name="Pizza from halves" description="Assemble your 35 cm pizza with two different flavors" price="210"/>
+        <pizza id="1" name="Pizza from the chef"
                description="Beef pastrami , sweet pepper , tomatoes , red onion , garlic , tkemali sauce , mozzarella cheese , signature tomato sauce"
                price="388"/>
-        <pizza name="Cheesy" description="Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce"
+        <pizza id="2" name="Cheesy" description="Mozzarella cheese , cheddar and parmesan cheese , alfredo signature sauce"
                price="388"/>
-        <pizza name="Fresh pepperoni"
+        <pizza id="3" name="Fresh pepperoni"
                description="Savory pepperoni , extra mozzarella , tomatoes , signature tomato sauce" price="388"/>
-        <pizza name="Double chicken" description="Chicken , mozzarella cheese , alfredo signature sauce" price="388"/>
-        <pizza name="Chorizo fresh"
+        <pizza id="4" name="Double chicken" description="Chicken , mozzarella cheese , alfredo signature sauce" price="388"/>
+        <pizza id="5" name="Chorizo fresh"
                description="Signature tomato sauce , mozzarella cheese , spicy chorizo , sweet pepper" price="388"/>
-        <pizza name="Ham and cheese"
+        <pizza id="6" name="Ham and cheese"
                description="Ham , mozzarella cheese , alfredo signature sauce" price="388"/>
-        <pizza name="Cheese chicken"
+        <pizza id="7" name="Cheese chicken"
                description="Chicken , mozzarella cheese , cheddar and parmesan cheese , cheese sauce , tomatoes , alfredo signature sauce , garlic"
                price="388"/>
 
-        <pizza name="BBQ Chicken"
+        <pizza id="8" name="BBQ Chicken"
                description="Chicken , bacon , barbecue sauce , red onion , mozzarella cheese , signature tomato sauce"
                price="388"/>
 
-        <pizza name="Four cheeses"
+        <pizza id="9" name="Four cheeses"
                description="Blue cheese , cheddar and parmesan cheese mix , mozzarella cheese , alfredo signature sauce"
                price="388"/>
 
-        <dessert name="Cheesecake New York"
+        <dessert id="10" name="Cheesecake New York"
                  description="We tried a thousand desserts and finally found the favorite of the guests - the most delicate curd cheesecake"
-                 price="210"/>
+                 price="220"/>
 
-        <dessert name="Banana cheesecake with chocolate chip cookies"
+        <dessert id="11" name="Banana cheesecake with chocolate chip cookies"
                  description="Sunny outside and bright inside. Summer novelty - delicate cheesecake with banana and chocolate chip cookies"
-                 price="210"/>
+                 price="396"/>
 
-        <dessert name="Fondant"
+        <dessert id="12" name="Fondant"
                  description="Four out of five guests say “Oh la la!” when they eat this French dessert with a crispy crust and melted chocolate filling."
-                 price="210"/>
+                 price="120"/>
 
-        <dessert name="Puff sticks with pineapples and cranberries"
+        <dessert id="13" name="Puff sticks with pineapples and cranberries"
                  description="Everything here at once - lingonberries and pineapple with condensed milk on puff pastry"
-                 price="210"/>
+                 price="440"/>
 
     </menu>
 

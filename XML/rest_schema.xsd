@@ -98,6 +98,7 @@
 
 
         <xs:complexType name="item">
+            <xs:attribute name="id" type="xs:decimal" use="required"/>
             <xs:attribute name="name" type="xs:string" use="required"/>
             <xs:attribute name="description" type="xs:string" use="required"/>
             <xs:attribute name="price" type="xs:decimal" use="required"/>
